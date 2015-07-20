@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:include schemaLocation="ades.xsd"/>
+
+  <xsd:element name="optical">
+    <xsd:complexType>
+      <xsd:all>
+        <xsd:element ref="permID"   minOccurs="0"/>
+        <xsd:element ref="provID"   minOccurs="0"/>
+        <xsd:element ref="trkSub"   minOccurs="0"/>
+        <xsd:element ref="obsID"    minOccurs="0"/>
+        <xsd:element ref="trkID"    minOccurs="0"/>
+        <xsd:element ref="mode"/>
+        <xsd:element ref="stn"      minOccurs="0"/>
+        <xsd:element ref="prg"      minOccurs="0"/>
+        <xsd:element ref="obsTime"/>
+        <xsd:element ref="ra"       minOccurs="0"/>
+        <xsd:element ref="dec"      minOccurs="0"/>
+        <xsd:element ref="deltaRA"  minOccurs="0"/>
+        <xsd:element ref="deltaDec" minOccurs="0"/>
+        <xsd:element ref="raStar"   minOccurs="0"/>
+        <xsd:element ref="decStar"  minOccurs="0"/>
+        <xsd:element ref="frame"    minOccurs="0"/>
+        <xsd:element ref="astCat"/>
+        <xsd:element ref="rmsRA"    minOccurs="0"/>
+        <xsd:element ref="rmsDec"   minOccurs="0"/>
+        <xsd:element ref="rmsCorr"  minOccurs="0"/>
+        <xsd:element ref="mag"      minOccurs="0"/>
+        <xsd:element ref="band"     minOccurs="0"/>
+        <xsd:element ref="photCat"  minOccurs="0"/>
+        <xsd:element ref="rmsMag"   minOccurs="0"/>
+        <xsd:element ref="photAp"   minOccurs="0"/>
+        <xsd:element ref="nucMag"   minOccurs="0"/>
+        <xsd:element ref="logSNR"   minOccurs="0"/>
+        <xsd:element ref="seeing"   minOccurs="0"/>
+        <xsd:element ref="exp"      minOccurs="0"/>
+        <xsd:element ref="rmsFit"   minOccurs="0"/>
+        <xsd:element ref="nStars"   minOccurs="0"/>
+        <xsd:element ref="ref"      minOccurs="0"/>
+        <xsd:element ref="disc"     minOccurs="0"/>
+        <xsd:element ref="subFmt"   minOccurs="0"/>
+        <xsd:element ref="precTime" minOccurs="0"/>
+        <xsd:element ref="precRA"   minOccurs="0"/>
+        <xsd:element ref="precDec"  minOccurs="0"/>
+        <xsd:element ref="uncTime"  minOccurs="0"/>
+        <xsd:element ref="notes"    minOccurs="0"/>
+        <xsd:element ref="remarks"  minOccurs="0"/>
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="radar">
+    <xsd:complexType>
+      <xsd:all>
+        <xsd:element ref="permID"   minOccurs="0"/>
+        <xsd:element ref="provID"   minOccurs="0"/>
+        <xsd:element ref="obsID"    minOccurs="0"/>
+        <xsd:element ref="mode"     />
+        <xsd:element ref="obsTime"  />
+        <xsd:element ref="logSNR"   minOccurs="0"/>
+        <xsd:element ref="ref"      minOccurs="0"/>
+        <xsd:element ref="subFmt"   minOccurs="0"/>
+        <xsd:element ref="remarks"  minOccurs="0"/>
+        <xsd:element ref="valRad"   />
+        <xsd:element ref="rmsRad"   />
+        <xsd:element ref="com"      minOccurs="0"/>
+        <xsd:element ref="frq"      />
+        <xsd:element ref="trx"      />
+        <xsd:element ref="rcv"      />
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="observations">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:choice maxOccurs="unbounded"> 
+          <xsd:element ref="optical"/>
+          <xsd:element ref="radar"/>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="observationContext">
+    <xsd:complexType>
+      <xsd:all>
+        <xsd:element ref="observation"     minOccurs="0"/>
+        <xsd:element ref="observatory"     minOccurs="0"/>
+        <xsd:element ref="contact"         minOccurs="0"/>
+        <xsd:element ref="observers"       minOccurs="0"/>
+        <xsd:element ref="measurers"       minOccurs="0"/>
+        <xsd:element ref="telescope"       minOccurs="0"/>
+        <xsd:element ref="software"        minOccurs="0"/>
+        <xsd:element ref="comment"         minOccurs="0"/>
+        <xsd:element ref="coinvestigators" minOccurs="0"/>
+        <xsd:element ref="collaborators"   minOccurs="0"/>
+        <xsd:element ref="fundingSource"   minOccurs="0"/>
+        <xsd:element ref="orbProd"         minOccurs="0"/>
+        <xsd:element ref="photProd"        minOccurs="0"/>
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="observationBatch">
+    <xsd:complexType>
+      <xsd:sequence maxOccurs="unbounded">
+        <xsd:element ref="observationContext"/>
+        <xsd:element ref="observations"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
