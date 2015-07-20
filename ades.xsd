@@ -26,7 +26,7 @@
     </xsd:annotation>
     <xsd:restriction base="xsd:decimal">
       <xsd:minInclusive value="0."/>
-      <xsd:maxInclusive value="360."/>
+      <xsd:maxExclusive value="360."/>
     </xsd:restriction>
   </xsd:simpleType>
 
