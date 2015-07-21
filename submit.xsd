@@ -10,7 +10,7 @@
         <xsd:element ref="provID"   minOccurs="0"/>
         <xsd:element ref="trkSub"   minOccurs="0"/>
         <xsd:element ref="obsID"    minOccurs="0"/>
-        <xsd:element ref="trkID"    minOccurs="0"/>
+        <!-- trkID disallowed in submissions -->
         <xsd:element ref="mode"     />
         <xsd:element ref="stn"      />
         <xsd:element ref="prg"      minOccurs="0"/>
@@ -32,17 +32,17 @@
         <xsd:element ref="rmsMag"   minOccurs="0"/>
         <xsd:element ref="photAp"   minOccurs="0"/>
         <xsd:element ref="nucMag"   minOccurs="0"/>
-        <xsd:element ref="logSNR"   minOccurs="0"/>
+        <xsd:element ref="logSNR"   />
         <xsd:element ref="seeing"   minOccurs="0"/>
         <xsd:element ref="exp"      minOccurs="0"/>
         <xsd:element ref="rmsFit"   minOccurs="0"/>
         <xsd:element ref="nStars"   minOccurs="0"/>
-        <xsd:element ref="ref"      minOccurs="0"/>
-        <xsd:element ref="disc"     minOccurs="0"/>
-        <xsd:element ref="subFmt"   minOccurs="0"/>
-        <xsd:element ref="precTime" minOccurs="0"/>
-        <xsd:element ref="precRA"   minOccurs="0"/>
-        <xsd:element ref="precDec"  minOccurs="0"/>
+        <!-- ref      disallowed in submissions -->
+        <!-- disc     disallowed in submissions -->
+        <!-- subFmt   disallowed in submissions -->
+        <!-- precTime disallowed in submissions -->
+        <!-- precRA   disallowed in submissions -->
+        <!-- precDec  disallowed in submissions -->
         <xsd:element ref="uncTime"  minOccurs="0"/>
         <xsd:element ref="notes"    minOccurs="0"/>
         <xsd:element ref="remarks"  minOccurs="0"/>
@@ -70,8 +70,8 @@
         <xsd:element ref="mode"     />
         <xsd:element ref="obsTime"  />
         <xsd:element ref="logSNR"   minOccurs="0"/>
-        <xsd:element ref="ref"      minOccurs="0"/>
-        <xsd:element ref="subFmt"   minOccurs="0"/>
+        <!-- ref      disallowed in submissions -->
+        <!-- subFmt   disallowed in submissions -->
         <xsd:element ref="remarks"  minOccurs="0"/>
         <xsd:element ref="valRad"   />
         <xsd:element ref="rmsRad"   />
@@ -97,19 +97,17 @@
   <xsd:element name="observationContext">
     <xsd:complexType>
       <xsd:all>
-        <xsd:element ref="observation"     minOccurs="0"/>
-        <xsd:element ref="observatory"     minOccurs="0"/>
-        <xsd:element ref="contact"         minOccurs="0"/>
-        <xsd:element ref="observers"       minOccurs="0"/>
-        <xsd:element ref="measurers"       minOccurs="0"/>
+        <xsd:element ref="observation"     />
+        <xsd:element ref="observatory"     />
+        <xsd:element ref="contact"         />
+        <xsd:element ref="observers"       />
+        <xsd:element ref="measurers"       />
         <xsd:element ref="telescope"       minOccurs="0"/>
         <xsd:element ref="software"        minOccurs="0"/>
         <xsd:element ref="comment"         minOccurs="0"/>
         <xsd:element ref="coinvestigators" minOccurs="0"/>
         <xsd:element ref="collaborators"   minOccurs="0"/>
         <xsd:element ref="fundingSource"   minOccurs="0"/>
-        <xsd:element ref="orbProd"         minOccurs="0"/>
-        <xsd:element ref="photProd"        minOccurs="0"/>
       </xsd:all>
     </xsd:complexType>
   </xsd:element>
@@ -117,7 +115,7 @@
   <xsd:element name="observationBatch">
     <xsd:complexType>
       <xsd:sequence maxOccurs="unbounded">
-        <xsd:element ref="observationContext" minOccurs="0"/>
+        <xsd:element ref="observationContext"/>
         <xsd:element ref="observations"/>
       </xsd:sequence>
     </xsd:complexType>
