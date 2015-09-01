@@ -1,0 +1,100 @@
+<observationBatch>
+  <observationContext>
+    <observation>
+      <count>12</count>
+    </observation>
+    <observatory>    
+      <mpcCode>F51</mpcCode>
+      <name>Pan-STARRS 1</name>
+    </observatory>    
+    <contact>
+      <name>P. Villa</name>
+      <ackMessage>Sample header</ackMessage> 
+      <ackEmail>pancho.villa@gmail.com</ackEmail>
+    </contact>
+    <telescope>
+      <aperture>1.5</aperture>
+      <design>Reflector</design>
+      <detector>CCD</detector>
+    </telescope>
+    <observers>
+      <name>P. Villa</name>
+      <name>F. Madero</name>
+    </observers>
+    <measurers>
+      <name>P. Villa</name>
+      <name>F. Madero</name>
+    </measurers>
+  </observationContext>
+  <observationContext>
+    <observation>
+      <count>12</count>
+    </observation>
+    <observatory>    
+      <mpcCode>F51</mpcCode>
+      <name>Pan-STARRS 1</name>
+    </observatory>    
+    <contact>
+      <name>P. Villa</name>
+      <ackMessage>Sample header</ackMessage> 
+      <ackEmail>pancho.villa@gmail.com</ackEmail>
+    </contact>
+    <telescope>
+      <aperture>1.5</aperture>
+      <design>Reflector</design>
+      <detector>CCD</detector>
+    </telescope>
+    <observers>
+      <name>P. Villa</name>
+      <name>F. Madero</name>
+    </observers>
+    <measurers>
+      <name>P. Villa</name>
+      <name>F. Madero</name>
+    </measurers>
+  </observationContext>
+  <observations>
+    <optical> 
+      <provID>2015 HD76</provID> 
+      <trkSub>aa</trkSub>
+      <mode>CCD</mode>
+      <notes>klmn</notes>
+      <stn>F51</stn>
+      <prg>31</prg>
+      <obsTime>2015-04-25T12:32:34.5</obsTime>
+      <ra>215.65605</ra> 
+      <dec>-13.547872</dec>
+      <astCat>2MA</astCat>
+      <rmsRA>0.15</rmsRA>
+      <rmsDec>0.13</rmsDec>
+      <rmsCorr>0.21</rmsCorr>      
+      <mag>21.9</mag>
+      <photCat>2MA</photCat>
+      <band>w</band>
+      <rmsMag>0.25</rmsMag>
+      <logSNR>0.775</logSNR>
+      <remarks>High winds affected tracking</remarks>
+    </optical> 
+    <optical> 
+      <mode></mode>
+      <stn></stn>
+      <obsTime>2015-04-25T12:32:35</obsTime>
+      <astCat></astCat>
+      <logSNR>0.775</logSNR>
+    </optical> 
+    <optical> 
+      <mode></mode>
+      <stn></stn>
+      <obsTime>2015-04-25T12:32:35</obsTime>
+      <astCat></astCat>
+      <logSNR>0.775</logSNR>
+    </optical> 
+    <optical> 
+      <mode></mode>
+      <stn></stn>
+      <obsTime>2015-04-25T12:32:35</obsTime>
+      <astCat></astCat>
+      <logSNR>0.775</logSNR>
+    </optical>
+  </observations>
+</observationBatch>
