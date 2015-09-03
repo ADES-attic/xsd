@@ -85,12 +85,10 @@
 
   <xsd:element name="observations">
     <xsd:complexType>
-      <xsd:sequence>
-        <xsd:choice maxOccurs="unbounded"> 
-          <xsd:element ref="optical"/>
-          <xsd:element ref="radar"/>
-        </xsd:choice>
-      </xsd:sequence>
+      <xsd:choice> 
+        <xsd:element ref="optical" maxOccurs="unbounded"/>
+        <xsd:element ref="radar"   maxOccurs="unbounded"/>
+      </xsd:choice>
     </xsd:complexType>
   </xsd:element>
 
