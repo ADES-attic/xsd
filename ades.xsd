@@ -11,10 +11,11 @@
       <xsd:documentation xml:lang="en">
         ADES specifies that that the pipe character is disallowed in PSV.
         To allow data conversion from XML, it must disallowed in XML as well.
+        Also disallow blank elements.
       </xsd:documentation>
     </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:pattern value="[^|]*"/>
+      <xsd:pattern value="[^|]*[\w-[|]][^|]*"/>
     </xsd:restriction>
   </xsd:simpleType>
 
