@@ -49,22 +49,22 @@
       <remarks>High winds affected tracking</remarks>
     </optical> 
     <optical> 
-      <mode></mode>
-      <stn></stn>
+      <mode>CCD</mode>
+      <stn>F51</stn>
       <obsTime>2015-04-25T12:32:35</obsTime>
-      <astCat></astCat>
+      <astCat>2MA</astCat>
     </optical> 
     <optical> 
-      <mode></mode>
-      <stn></stn>
+      <mode>CCD</mode>
+      <stn>F51</stn>
       <obsTime>2015-04-25T12:32:35</obsTime>
-      <astCat></astCat>
+      <astCat>2MA</astCat>
     </optical> 
     <optical> 
-      <mode></mode>
-      <stn></stn>
+      <mode>CCD</mode>
+      <stn>F51</stn>
       <obsTime>2015-04-25T12:32:35</obsTime>
-      <astCat></astCat>
+      <astCat>2MA</astCat>
     </optical> 
   </observations>
 </observationBatch>
