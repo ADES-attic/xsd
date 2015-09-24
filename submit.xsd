@@ -113,8 +113,10 @@
   <xsd:element name="observationBatch">
     <xsd:complexType>
       <xsd:sequence maxOccurs="unbounded">
-        <xsd:element ref="observationContext"/>
-        <xsd:element ref="observations"/>
+        <xsd:sequence>
+          <xsd:element ref="observationContext"/>
+          <xsd:element ref="observations"/>
+        </xsd:sequence>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
