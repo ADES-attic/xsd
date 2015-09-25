@@ -175,8 +175,8 @@
         <xsd:element name="detector"    type="StringType"          minOccurs="0"/>
         <xsd:element name="fRatio"      type="PositiveDecimalType" minOccurs="0"/>
         <xsd:element name="filter"      type="StringType"          minOccurs="0"/>
-        <xsd:element name="array_size"  type="StringType"          minOccurs="0"/>
-        <xsd:element name="pixel_scale" type="PositiveDecimalType" minOccurs="0"/>
+        <xsd:element name="arraySize"   type="StringType"          minOccurs="0"/>
+        <xsd:element name="pixelScale"  type="PositiveDecimalType" minOccurs="0"/>
       </xsd:all>
     </xsd:complexType>
   </xsd:element>
