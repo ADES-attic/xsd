@@ -86,7 +86,7 @@
   <xsd:element name="astCat"    type="StringType"/>
   <xsd:element name="rmsRA"     type="PositiveDecimalType"/>
   <xsd:element name="rmsDec"    type="PositiveDecimalType"/>
-  <xsd:element name="rmsCorr"   type="PositiveDecimalType"/>
+  <xsd:element name="rmsCorr"   type="xsd:decimal"/>
   <xsd:element name="mag"       type="xsd:decimal"/>
   <xsd:element name="band"      type="StringType"/>
   <xsd:element name="photCat"   type="StringType"/>
